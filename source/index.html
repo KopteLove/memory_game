@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Memory game</title>
+</head>
+<body>
+    <div class="wrapper popup_start">
+        <div class="popup">
+            <h1>Выберете уровень сложности</h1>
+            <div>
+                <label>
+                    <input type="radio" name="level" value="4" checked>
+                    4
+                </label>
+                <label>
+                    <input type="radio" name="level" value="8">
+                    8
+                </label>
+                <label>
+                    <input type="radio" name="level" value="12">
+                    12
+                </label>
+            </div>
+            <button class="button popup_btn popup_btn-start">Начать</button>
+        </div>
+    </div>
+    <div class="wrapper popup_win close">
+        <div class="popup">
+            <h1>Вы великолепны!!!</h1>
+            <button class="button popup_btn popup_btn-new">Новая игра</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

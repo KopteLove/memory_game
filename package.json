@@ -1,0 +1,16 @@
+{
+    "name": "homework",
+    "version": "1.0.0",
+    "description": "Homework",
+    "main": "index.js",
+    "author": "Dmitry Koptelov",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.26.13",
+        "gulp": "^4.0.2",
+        "gulp-sass": "^4.1.0"
+    },
+    "scripts": {
+        "start": "gulp start"
+    }
+}

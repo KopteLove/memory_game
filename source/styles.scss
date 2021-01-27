@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #393838;
+    color: #ffffff;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+ul {
+    width: 600px;
+    padding: 20px;
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: darkgrey;
+    border-radius: 5px;
+    list-style: none;
+    box-shadow: 0 0 6px 3px #ffffff;
+}
+
+li {
+    width: 110px;
+    height: 170px;
+    border-radius: 10px;
+    background-color: #5c7d16;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #abef0a;
+    position: relative;
+
+    &:hover {
+        transform: translateY(-5px);
+        transition: .6s;
+    }
+
+    &.click {
+        background-color: #393838;
+        border: 1px dashed #ffffff;
+
+        &::after {
+            content: attr(data-num);
+            font-size: 150px;
+            color: bisque;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &.hide {
+        opacity: 0;
+        transition: .5s;
+    }
+}
+
+.name {
+    font-size: 20px;
+    padding: 20px;
+    background-color: #5c7d16;
+    border: 2px double green;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &.close {
+    display: none;
+  }
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  outline: none;
+}
+
+.popup {
+  padding: 20px;
+  background-color: #5c7d16;
+  border-radius: 10px;
+  border: 2px solid #abef0a;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 20px;
+
+    & + div {
+      margin-bottom: 20px;
+      font-size: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  input {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  .popup_btn {
+    background-color: #bcb919;
+    border: 1px solid #727204;
+    box-shadow: 0 3px 5px 1px gold;
+  }
+}
